@@ -19,8 +19,13 @@ def entry_data(**kwargs):
 
 
 def generate_slip(username,vehicle_number, entry_time):
-    with open(f"generated_slip/{username}.txt",'w') as f:
+    connection = sqlite3.connect("parking_db.db")
+    cursor = connection.cursor()
+    cursor.execute(f'select max(id) from tb_parking')
+    id = cursor.fetchone()[0]
+    with open(f"generated_slip/{id}.txt",'w') as f:
         f.writelines([
+            f"id: {id}\n"
             f"Name : {username}\n",
             f"Vehicle number : {vehicle_number}\n",
             f"Entry Time : {entry_time}\n"

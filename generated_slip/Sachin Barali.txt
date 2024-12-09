@@ -1,3 +1,0 @@
-Name => Sachin Barali
-Vehicle number => 7777
-Entry Time => 2024-12-09 09:01
