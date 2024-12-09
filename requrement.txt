@@ -1,0 +1,49 @@
+1. create 
+
+Table 
+id autoincrement
+username
+phone
+vehicle number
+entry time
+exit time
+total price 
+vehicle type
+
+2 entry
+username -
+phone - 
+vehicle number -
+vehicle type - 1) two wheeler
+                2) four wheeler
+
+print slip - text file
+    1) id
+    2) username
+    3) vehicle number
+    4) entry time
+
+exit module
+
+based on id retrieve data from database
+exit time - insert database
+
+starttime - exit time
+
+total fare 
+insert into table 
+add all detail to file
+
+create fare table
+
+vehicle type
+base fare 
+additional fare
+
+two wheeler, 10, 5
+four wheeler, 20, 10
+
+insert fare price
+two wheeler or four wheeler
+base price
+additional fare
