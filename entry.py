@@ -7,6 +7,7 @@ def create_table():
     connection.commit()
     connection.close()
 
+
 def entry_data(**kwargs):
     connection = sqlite3.connect("parking_db.db")
     cursor = connection.cursor()
@@ -31,3 +32,4 @@ def generate_slip(username,vehicle_number, entry_time):
             f"Entry Time : {entry_time}\n"
         ])
     print("slip generate successfully. Collect the slip")
+    connection.close()
